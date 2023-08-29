@@ -1,0 +1,146 @@
+@media screen and (max-width: 650px) {
+ /* LARGEUR 650PX ET HAUTEUR 800PX */
+
+
+ nav {
+    max-width: 100%;
+    min-width: 650px;
+    left: 0px;
+    display: block;
+    flex-direction: column;
+    transition: ease 1s;
+}
+
+.ancre {
+    display: none;
+}
+
+.logo {
+
+    width: 25%;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    display: flex;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin-left: 50%;
+
+}
+
+#logoid {
+   
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    padding-left:  0;
+}
+
+.menu{
+    display: flex;
+ 
+
+}
+.banner {
+    width: 100%;
+    height: 50%;
+}
+
+#idbanner {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.arrowh2{
+    display: none;
+}
+
+h1 {
+    display: none;
+}
+
+
+.card2{
+    display: none;
+}
+
+.card3{
+    display: none;
+}
+
+.boutoncarte {
+    display: none;
+
+}
+
+.textecarte {
+    width: 370px;
+    left: 0;
+    color: #FFF;
+text-align: justify;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
