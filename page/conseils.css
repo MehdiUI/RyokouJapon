@@ -5,7 +5,7 @@
     border: 0;
     margin: 0;
     text-decoration: none;
-
+    list-style: none;
 }
 
 html,
@@ -16,7 +16,8 @@ body {
 
 }
 
-nav {
+
+.navbar {
     display: flex;
     flex-direction: row;
     position: fixed;
@@ -24,8 +25,15 @@ nav {
     height: 107px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(7px);
-    z-index: 1;
+    z-index: 2;
 }
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
 
 .logo {
     width: 25%;
@@ -35,7 +43,7 @@ nav {
 #logoid {
     width: 259px;
     height: 100%;
-    padding-left: 259px;
+    padding-left: 159px;
 }
 
 .ancre {
@@ -50,7 +58,9 @@ nav {
     font-weight: 700;
     line-height: normal;
     width: 75%;
-    left: 400px;
+    left: 200px;
+    flex-direction: row;
+    
 
 }
 
@@ -60,34 +70,40 @@ a {
 
 .banner {
     width: 100%;
-    height: 825px;
+    
 }
 
 #idbanner {
     width: 100%;
-    height: 825px;
+  
 
 }
+
+.icons{
+    display: none;
+}
+
 .grid {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 15px;
+ 
     position: relative;
     margin-top: 30px;
 }
-
 
 .cards {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 15px;
 }
 
 .cards_overlay {
-    width: 546px;
-    height: 384px;
+    
+    width: 437px;
+    height: 307px;
     background-color: #000;
     position: absolute;
     opacity: 0.3;
@@ -95,8 +111,8 @@ a {
 }
 
 .cards_overlay2 {
-    width: 569px;
-    height: 384px;
+    width: 510px;
+    height: 307px;
     background-color: #000;
     position: absolute;
     opacity: 0.3;
@@ -104,31 +120,31 @@ a {
 
 .cards_overlay3 {
     width: 365px;
-    height: 384px;
+    height: 307px;
     background-color: #000;
     position: absolute;
     opacity: 0.3;
 }
 
 .cards_overlay4 {
-    width: 569px;
-    height: 384px;
+    width: 437px;
+    height: 307px;
     background-color: #000;
     position: absolute;
     opacity: 0.3;
 }
 
 .cards_overlay5 {
-    width: 365px;
-    height: 384px;
+    width: 437px;
+    height: 307px;
     background-color: #000;
     position: absolute;
     opacity: 0.3;
 }
 
 .cards_overlay6 {
-    width: 546px;
-    height: 384px;
+    width: 437px;
+    height: 307px;
     background-color: #000;
     position: absolute;
     opacity: 0.3;
@@ -168,11 +184,19 @@ a {
 
 
 .cards img {
-    width: 100%;
-    height: 100%;
+    width: 437px;
+    height: 307px;
     object-fit: cover;
     cursor: pointer;
+}
 
+#nagoyaimg{
+width: 510px;
+}
+
+#beppuimg{
+    width: 365px;
+    height: 307px;
 }
 
 .cards p {
@@ -184,20 +208,82 @@ a {
 }
 
 .cards p:nth-child(1) {
-    font-size: 159px;
+    font-size: 100px;
     opacity: 49%;
     position: absolute;
-    z-index: 1;
+   
 }
 
 .cards p:nth-child(2) {
-    font-size: 2rem;
+    font-size: 64px;
     position: absolute;
     font-size: 65.282px;
-    z-index: 1;
+    
 }
 
 
+
+#btncards {
+    display: flex;
+    position: absolute;
+    width: 303px;
+    height: 64px;
+    padding: 13px 53px 12px 54px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: 192px;
+    border: 3px solid #F6F0F0;
+    background: rgba(246, 240, 240, 0.12);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    color: #FFF;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+
+}
+
+#btncards :before {
+    transition: 0.5s;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+
+    background: linear-gradient(25deg, rgba(255, 255, 255, 0.43) 0%, rgba(30, 25, 25, 0.64) 28.32%, rgba(30, 25, 25, 0.33) 74.24%, rgba(255, 255, 255, 0.43) 100%);
+    cursor: pointer;
+
+    z-index: -1;
+}
+
+
+
+#btncards :hover:before,
+#btncards :focus:before {
+    transition: 0.5s ease-in-out;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+#btncards :active {
+    transform: scale(0.9);
+}
+
+.cards:hover #btncards  {
+    opacity: 1;
+}
 
 button {
     display: flex;
@@ -269,7 +355,6 @@ button:active {
     position: relative;
     z-index: 0;
     justify-content: center;
-
     padding-top: 55px;
 }
 
@@ -378,7 +463,7 @@ align-items: center;
     justify-content: center;
     position: relative;
     bottom: 600px;
-    left: 500px;
+    left: 22%;
 
 }
 
@@ -392,6 +477,7 @@ align-items: center;
     line-height: normal;
     position: relative;
     bottom: 50px;
+    margin-top: 50px;
 }
 
 .formulaire {
@@ -401,8 +487,16 @@ align-items: center;
     color: white;
 }
 
+.input::placeholder{
+    color: grey;
+}
+
+.inputform::placeholder{
+    color: white;
+}
+
 .inputform {
-    color: #fff;
+    color: white;
     font-size: 0.9rem;
     background-color: transparent;
     width: 100%;
@@ -420,18 +514,9 @@ align-items: center;
 
 
 
-.input-border {
-    position: absolute;
-    background: var(--border-after-color);
-    width: 0%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    transition: 0.3s;
-}
 
 input:hover {
-    background: var(--input-hovered-color);
+    background: #FFF;
 }
 
 input:focus {
@@ -464,7 +549,8 @@ input:focus~.input-border {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-top: 30px;
+    margin-top: 90px;
+
 }
 
 .btnform::before {
@@ -482,6 +568,8 @@ input:focus~.input-border {
     -webkit-mask-composite: clear;
     mask-composite: clear;
 }
+
+
 
 
 
@@ -504,22 +592,33 @@ input:focus~.input-border {
     margin-top: 71px;
 }
 
-footer{
+.post1 img{
+    width: 390px;
+}
+.post2 img{
+    width: 390px;
+}
+.post3 img{
+    width: 390px;
+}
+
+footer {
     background-color: #1E1919;
     width: 100%;
     height: 600px;
     margin-top: 71px;
     display: flex;
     flex-direction: row;
-    padding-top:133px;
+    padding-top: 133px;
 
 }
-.logofooter{
+
+.logofooter {
     width: 300px;
     height: 183px;
     display: flex;
     position: relative;
-    margin-left: 243px;
+    margin-left: 2%;
 }
 
 .sitemap {
@@ -533,21 +632,22 @@ footer{
     font-style: normal;
     font-weight: 400;
     gap: 30px;
-    margin-left: 87px ;
+    margin-left: 87px;
     position: relative;
 }
 
-.sitemap h3{
+.sitemap h3 {
     color: var(--white, #FFF);
     font-family: Murecho;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
-    line-height: 37.275px; /* 116.484% */ 
+    line-height: 37.275px;
+    /* 116.484% */
     width: 200px;
 }
 
-.reseaux{
+.reseaux {
     width: 126px;
     height: 339.9px;
     display: flex;
@@ -558,18 +658,19 @@ footer{
     font-style: normal;
     font-weight: 400;
     gap: 30px;
-    margin-left: 180px ;
-    position: relative;  
+    margin-left: 180px;
+    position: relative;
 }
 
-.reseaux h3{
+.reseaux h3 {
     color: var(--white, #FFF);
     font-family: Murecho;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
-    line-height: 37.275px; /* 116.484% */
-     
+    line-height: 37.275px;
+    /* 116.484% */
+
 }
 
 .siege_social {
@@ -583,21 +684,21 @@ footer{
     font-style: normal;
     font-weight: 400;
     gap: 30px;
-    margin-left: 180px ;
-    position: relative;  
+    margin-left: 180px;
+    position: relative;
 }
 
-.siege_social h3{
+.siege_social h3 {
     color: var(--white, #FFF);
-font-family: Murecho;
-font-size: 32px;
-font-style: normal;
-font-weight: 700;
-line-height: 37.275px; 
-width: 200px;
+    font-family: Murecho;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 37.275px;
+    width: 200px;
 }
 
-.newsletter{
+.newsletter {
     margin-top: 250px;
     display: flex;
     flex-direction: column;
@@ -607,16 +708,12 @@ width: 200px;
 }
 
 .form {
-    --width-of-input: 200px;
-    --border-height: 1px;
-    --border-before-color: rgba(221, 221, 221, 0.39);
-    --border-after-color: #5891ff;
-    --input-hovered-color: #4985e01f;
+    
     position: relative;
-    width: var(--width-of-input);
-   }
-   /* styling of Input */
-   .input {
+}
+
+/* styling of Input */
+.input {
     color: #fff;
     font-size: 0.9rem;
     background-color: transparent;
@@ -624,91 +721,94 @@ width: 200px;
     box-sizing: border-box;
     padding-inline: 0.5em;
     padding-block: 0.7em;
-    border: none;
-    border-bottom: var(--border-height) solid var(--border-before-color);
-    color: var(--white, #FFF);
-font-family: Poppins;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 29.288px; /* 146.438% */
-   }
+ 
+    
+    
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29.288px;
+    /* 146.438% */
+}
 
-   .input-border {
+.input-border {
     position: absolute;
     background: #F6F0F0;
-    width: 0%;
+
     height: 2px;
     bottom: 0;
     left: 0;
-    transition: 0.3s;
-    width: 433.987px;
+    
+    width: 350px;
     height: 1.331px;
-   }
+}
 
-   input:hover {
+input:hover {
     background: var(--input-hovered-color);
-   }
-   
-   input:focus {
-    outline: none;
-   }
+}
 
-   input:focus ~ .input-border {
+input:focus {
+    outline: none;
+}
+
+input:focus~.input-border {
     width: 100%;
-   }
-   
-   .fa-regular{
+}
+
+.fa-regular {
     color: #ffffff;
     width: 30.65px;
     height: 19.87px;
-    }
-
-.newsletter h3 {
-            color: var(--white, #FFF);
-            font-family: Murecho;
-            font-size: 32px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 37.275px;
+    left: 70px;
+    position: relative;
 }
 
-.mailentreprise{
+.newsletter h3 {
+    color: var(--white, #FFF);
+    font-family: Murecho;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 37.275px;
+}
+
+.mailentreprise {
     display: flex;
     position: relative;
     margin-top: 150px;
     right: 920px;
     color: var(--white, #FFF);
-text-align: justify;
-font-family: poppins;
-font-size: 23.962px;
-font-style: normal;
-font-weight: 300;
-line-height: 31.95px; 
+    text-align: justify;
+    font-family: poppins;
+    font-size: 23.962px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 31.95px;
 }
 
-.numeroentreprise{
+.numeroentreprise {
     display: flex;
     position: relative;
     right: 320px;
     color: var(--white, #FFF);
-text-align: justify;
-font-family: poppins;
-font-size: 23.962px;
-font-style: normal;
-font-weight: 300;
-margin-top: 0;
-bottom: 30px;
+    text-align: justify;
+    font-family: poppins;
+    font-size: 23.962px;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 0;
+    bottom: 30px;
 }
 
-.droits{
+.droits {
     display: flex;
     position: relative;
     color: rgba(255, 255, 255, 0.6);
-font-family: Poppins;
-font-size: 15.975px;
-font-style: normal;
-font-weight: 400;
-line-height: 26.625px; 
-bottom: 55px;
+    font-family: Poppins;
+    font-size: 15.975px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26.625px;
+    bottom: 55px;
 }

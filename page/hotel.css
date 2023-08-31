@@ -5,7 +5,7 @@
     border: 0;
     margin: 0;
     text-decoration: none;
-
+    list-style: none;
 }
 
 html,
@@ -16,7 +16,9 @@ body {
 
 }
 
-nav {
+
+
+.navbar {
     display: flex;
     flex-direction: row;
     position: fixed;
@@ -24,8 +26,15 @@ nav {
     height: 107px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(7px);
-    z-index: 1;
+    z-index: 2;
 }
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
 
 .logo {
     width: 25%;
@@ -35,7 +44,7 @@ nav {
 #logoid {
     width: 259px;
     height: 100%;
-    padding-left: 259px;
+    padding-left: 159px;
 }
 
 .ancre {
@@ -50,7 +59,9 @@ nav {
     font-weight: 700;
     line-height: normal;
     width: 75%;
-    left: 400px;
+    left: 200px;
+    flex-direction: row;
+    
 
 }
 
@@ -61,29 +72,34 @@ a {
 .banner {
     width: 100%;
     height: 863px;
-    
 }
 
 #idbanner {
     width: 100%;
     height: 863px;
+}
 
+.icons{
+    display: none;
 }
 
 .grid{
     margin-top: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10rem;
+    margin-left: 5%;
+    height: 816px;
 }
 .grid-1{
     display: flex;
+    align-items: center;
+    justify-content: c;
 }
 .grid-2{
     display: flex;
     flex-wrap: wrap;
     width: 60vw;
+    position: relative;
+    left: 455px;
+    bottom: 817px;
 }
 
 /* FIN DES METHODES  */
@@ -91,8 +107,7 @@ a {
 .grid-1 .cards:nth-child(1) img{
     width: 458px;
     height: 816px;
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
+   
 }
 .grid-2 .cards:nth-child(1) img{
     width: 458px;
@@ -102,12 +117,12 @@ a {
 .grid-2 .cards:nth-child(2) img{
     width: 458px;
     height: 408px;
-    border-top-right-radius: 20px;
+    
 }
 .grid-2 .cards:nth-child(4) img{
     width: 458px;
     height: 408px;
-    border-bottom-right-radius: 20px;
+   
 }
 .grid-2 .cards:nth-child(3) img{
     width: 458px;
@@ -584,9 +599,7 @@ button:active {
     display: flex;
 }
 
-#plat1{
-    border-radius: 20px;
-}
+
 
 .contact {
     width: 100%;
@@ -619,7 +632,7 @@ button:active {
     justify-content: center;
     position: relative;
     bottom: 600px;
-    left: 500px;
+    left: 22%;
 
 }
 
@@ -633,6 +646,7 @@ button:active {
     line-height: normal;
     position: relative;
     bottom: 50px;
+    margin-top: 50px;
 }
 
 .formulaire {
@@ -642,8 +656,16 @@ button:active {
     color: white;
 }
 
+.input::placeholder{
+    color: grey;
+}
+
+.inputform::placeholder{
+    color: white;
+}
+
 .inputform {
-    color: #fff;
+    color: white;
     font-size: 0.9rem;
     background-color: transparent;
     width: 100%;
@@ -661,18 +683,9 @@ button:active {
 
 
 
-.input-border {
-    position: absolute;
-    background: var(--border-after-color);
-    width: 0%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    transition: 0.3s;
-}
 
 input:hover {
-    background: var(--input-hovered-color);
+    background: #FFF;
 }
 
 input:focus {
@@ -705,7 +718,8 @@ input:focus~.input-border {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-top: 30px;
+    margin-top: 90px;
+
 }
 
 .btnform::before {
@@ -723,6 +737,7 @@ input:focus~.input-border {
     -webkit-mask-composite: clear;
     mask-composite: clear;
 }
+
 
 
 
@@ -745,6 +760,16 @@ input:focus~.input-border {
     margin-top: 71px;
 }
 
+.post1 img{
+    width: 390px;
+}
+.post2 img{
+    width: 390px;
+}
+.post3 img{
+    width: 390px;
+}
+
 footer{
     background-color: #1E1919;
     width: 100%;
@@ -755,13 +780,15 @@ footer{
     padding-top:133px;
 
 }
-.logofooter{
+
+.logofooter {
     width: 300px;
     height: 183px;
     display: flex;
     position: relative;
-    margin-left: 243px;
+    margin-left: 2%;
 }
+
 
 .sitemap {
     width: 126px;
@@ -855,9 +882,12 @@ width: 200px;
     --input-hovered-color: #4985e01f;
     position: relative;
     width: var(--width-of-input);
-   }
+}
+
    /* styling of Input */
-   .input {
+
+
+.input {
     color: #fff;
     font-size: 0.9rem;
     background-color: transparent;
@@ -875,17 +905,18 @@ font-weight: 400;
 line-height: 29.288px; /* 146.438% */
    }
 
-   .input-border {
+.input-border {
     position: absolute;
     background: #F6F0F0;
-    width: 0%;
+
     height: 2px;
     bottom: 0;
     left: 0;
-    transition: 0.3s;
-    width: 433.987px;
+    
+    width: 350px;
     height: 1.331px;
-   }
+}
+
 
    input:hover {
     background: var(--input-hovered-color);
@@ -898,12 +929,13 @@ line-height: 29.288px; /* 146.438% */
    input:focus ~ .input-border {
     width: 100%;
    }
-   
-   .fa-regular{
+   .fa-regular {
     color: #ffffff;
     width: 30.65px;
     height: 19.87px;
-    }
+    left: 70px;
+    position: relative;
+}
 
 .newsletter h3 {
             color: var(--white, #FFF);
@@ -953,4 +985,3 @@ font-weight: 400;
 line-height: 26.625px; 
 bottom: 55px;
 }
-

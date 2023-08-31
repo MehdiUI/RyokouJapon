@@ -22,24 +22,44 @@
 </head>
 
 <header>
-    <nav>
-        <div class="logo">
-            <a href="/index.html">
-                <img id="logoid"
-                    src="/asset/logo/Frame 393.svg"
-                    alt="Logotype RyokouJapon">
-            </a>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="/index.html">
+        <img id="logoid"
+          src="/asset/logo/Frame 393.svg"
+          alt="Logotype RyokouJapon">
+      </a>
 
-        </div>
-        <div class="ancre">
-            <div class="ancrenav"><a href="/page/destinations.html">Destinations</a></div>
-            <div class="ancrenav"><a href="/page/hotel.html">Hôtels</a></div>
-            <div class="ancrenav"><a href="/page/conseils.html">Conseils</a></div>
-            <div class="ancrenav"><a href="/page/agence.html">L'agence</a></div>
-            <div class="ancrenav"><a href="/page/contact.html">Contact</a></div>
-        </div>
-    </nav>
+    </div>
+    
+      
+    
+    <div class="ancre">
+      <ul>
+        <li >
+           <a href="/page/destinations.html">Destinations</a>
+        </li>
+        <li >
+          <a href="/page/hotel.html">Hôtels</a>
+        </li>
+        <li>
+          <a href="/page/conseils.html">Conseils</a>
+        </li>
+        <li>
+           <a href="/page/agence.html">L'agence</a>
+        </li>
+        <li>
+           <a href="/page/contact.html">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="icons"><img src="/asset/img/menu.png" alt=""></div>
+    
+  </nav>
 </header>
+
 <div class="banner"
     id="accueil">
     <img id="idbanner"
@@ -53,26 +73,27 @@
     <p id="titrekanji">京都</p>
     <p id="titregridk">Kyoto</p>
     <div class="cards_overlay"></div>
-    <img src="/asset/img/image 7_claire.png" alt="">
-    <button>Voir les détails</button>
-       
+    <img id="cards_img" src="/asset/img/image 7_claire.png" alt="">
+    <button id="btncards">Voir les détails</button>
+
   </div>
 
   <div class="cards">
     <p id="titrekanji">名古屋</p>
     <p id="titregridk">Nagoya</p>
     <div class="cards_overlay2"></div>
-    <img src="/asset/img/image 23.png"
+    <img id="nagoyaimg" src="/asset/img/image 23.png"
       alt="">
-      <button>Voir les détails</button>
+      <button id="btncards">Voir les détails</button>
   </div>
 
   <div class="cards">
     <p id="titrekanji">別府 </p>
     <p id="titregridb">Beppu</p>
     <div class="cards_overlay3"></div>
-    <img src="/asset/img/image 118CLAIRE.jpg"
-      alt=""><button>Voir les détails</button>
+    <img id="beppuimg" src="/asset/img/image 118CLAIRE.jpg"
+      alt="">
+      <button id="btncards">Voir les détails</button>
   </div>
 
   <div class="cards">
@@ -80,7 +101,7 @@
     <p id="titregridk">Fukuoka</p>
     <div class="cards_overlay4"></div>
     <img src="/asset/img/image 24.png"
-      alt=""><button>Voir les détails</button>
+      alt=""> <button id="btncards">Voir les détails</button>
   </div>
 
   <div class="cards">
@@ -88,7 +109,7 @@
     <p id="titregridk">Nara</p>
     <div class="cards_overlay5"></div>
     <img src="/asset/img/Rectangle 26_claire.png"
-      alt=""><button>Voir les détails</button>
+      alt=""> <button id="btncards">Voir les détails</button>
   </div>
 
   <div class="cards">
@@ -96,7 +117,7 @@
     <p id="titregridk">Okinawa</p>
     <div class="cards_overlay6"></div>
     <img src="/asset/img/image 25.png"
-      alt=""><button>Voir les détails</button>
+      alt=""> <button id="btncards">Voir les détails</button>
   </div>
 
 </div>
@@ -181,8 +202,6 @@
           placeholder="Email"
           required=""
           type="text">
-          
-        <span class="input-border"></span>
       </div>
 
       <button class="btnform">Envoyer</button>

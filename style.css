@@ -5,7 +5,7 @@
     border: 0;
     margin: 0;
     text-decoration: none;
-
+list-style: none;
 }
 
 html,
@@ -16,7 +16,7 @@ body {
 
 }
 
-nav {
+.navbar {
     display: flex;
     flex-direction: row;
     position: fixed;
@@ -24,8 +24,15 @@ nav {
     height: 107px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(7px);
-    z-index: 1;
+    z-index: 2;
 }
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
 
 .logo {
     width: 25%;
@@ -35,7 +42,7 @@ nav {
 #logoid {
     width: 259px;
     height: 100%;
-    padding-left: 259px;
+    padding-left: 159px;
 }
 
 .ancre {
@@ -50,7 +57,9 @@ nav {
     font-weight: 700;
     line-height: normal;
     width: 75%;
-    left: 400px;
+    left: 200px;
+    flex-direction: row;
+    
 
 }
 
@@ -69,18 +78,16 @@ a {
 
 }
 
-#menu{
+.icons{
     display: none;
-   
 }
-
 
 
 .h1 {
     position: relative;
     display: flex;
     bottom: 900px;
-    left: 350px;
+    left: 150px;
     z-index: 0;
     width: 50%;
 }
@@ -138,7 +145,6 @@ h2 {
     position: relative;
     z-index: 0;
     justify-content: center;
-
     padding-top: 55px;
 }
 
@@ -151,9 +157,8 @@ h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: flex;
     position: relative;
-    left: 257px;
-
     border: 1px solid #F6F0F0;
+    left: 100px;
 }
 
 .card__image {
@@ -254,7 +259,7 @@ h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: flex;
     position: relative;
-    left: 751px;
+    left: 551px;
     bottom: 545px;
     border: 1px solid #F6F0F0;
 }
@@ -268,13 +273,12 @@ h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: flex;
     position: relative;
-    left: 1245px;
+    left: 1000px;
     bottom: 1090px;
     border: 1px solid #F6F0F0;
 }
 
 .groupcardprise {
-
     height: 584px;
     margin-top: 30px;
 }
@@ -290,10 +294,10 @@ h2 {
 .boutoncarte {
     width: 205px;
     height: 66px;
-    left: 257px;
+    left: 157px;
     position: relative;
-
 }
+
 
 .btncarte {
     color: #FFF;
@@ -317,7 +321,7 @@ h2 {
     font-size: 20px;
     display: flex;
     position: relative;
-    left: 287px;
+    left: 187px;
     width: 701px;
     justify-content: justify;
     text-align: justify;
@@ -347,26 +351,28 @@ border-radius: 20px;
     justify-content: center;
 
 }
+
 .grid {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 15px;
+ 
     position: relative;
     margin-top: 30px;
 }
-
 
 .cards {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 15px;
 }
 
 .cards_overlay {
-    width: 546px;
-    height: 384px;
+    
+    width: 437px;
+    height: 307px;
     background-color: #000;
     position: absolute;
     opacity: 0.3;
@@ -374,8 +380,8 @@ border-radius: 20px;
 }
 
 .cards_overlay2 {
-    width: 569px;
-    height: 384px;
+    width: 510px;
+    height: 307px;
     background-color: #000;
     position: absolute;
     opacity: 0.3;
@@ -383,31 +389,31 @@ border-radius: 20px;
 
 .cards_overlay3 {
     width: 365px;
-    height: 384px;
+    height: 307px;
     background-color: #000;
     position: absolute;
     opacity: 0.3;
 }
 
 .cards_overlay4 {
-    width: 569px;
-    height: 384px;
+    width: 437px;
+    height: 307px;
     background-color: #000;
     position: absolute;
     opacity: 0.3;
 }
 
 .cards_overlay5 {
-    width: 365px;
-    height: 384px;
+    width: 437px;
+    height: 307px;
     background-color: #000;
     position: absolute;
     opacity: 0.3;
 }
 
 .cards_overlay6 {
-    width: 546px;
-    height: 384px;
+    width: 437px;
+    height: 307px;
     background-color: #000;
     position: absolute;
     opacity: 0.3;
@@ -447,11 +453,19 @@ border-radius: 20px;
 
 
 .cards img {
-    width: 100%;
-    height: 100%;
+    width: 437px;
+    height: 307px;
     object-fit: cover;
     cursor: pointer;
+}
 
+#nagoyaimg{
+width: 510px;
+}
+
+#beppuimg{
+    width: 365px;
+    height: 307px;
 }
 
 .cards p {
@@ -463,22 +477,22 @@ border-radius: 20px;
 }
 
 .cards p:nth-child(1) {
-    font-size: 159px;
+    font-size: 100px;
     opacity: 49%;
     position: absolute;
-    z-index: 1;
+   
 }
 
 .cards p:nth-child(2) {
-    font-size: 2rem;
+    font-size: 64px;
     position: absolute;
     font-size: 65.282px;
-    z-index: 1;
+    
 }
 
 
 
-button {
+#btncards {
     display: flex;
     position: absolute;
     width: 303px;
@@ -487,7 +501,7 @@ button {
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    margin-top: 292px;
+    margin-top: 192px;
     border: 3px solid #F6F0F0;
     background: rgba(246, 240, 240, 0.12);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -500,9 +514,11 @@ button {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    cursor: pointer;
+
 }
 
-button:before {
+#btncards :before {
     transition: 0.5s;
     position: absolute;
     top: 0;
@@ -513,27 +529,28 @@ button:before {
     content: '';
 
     background: linear-gradient(25deg, rgba(255, 255, 255, 0.43) 0%, rgba(30, 25, 25, 0.64) 28.32%, rgba(30, 25, 25, 0.33) 74.24%, rgba(255, 255, 255, 0.43) 100%);
-
+    cursor: pointer;
 
     z-index: -1;
 }
 
 
 
-button:hover:before,
-button:focus:before {
+#btncards :hover:before,
+#btncards :focus:before {
     transition: 0.5s ease-in-out;
     left: 0;
     right: 0;
     opacity: 1;
+    cursor: pointer;
 
 }
 
-button:active {
+#btncards :active {
     transform: scale(0.9);
 }
 
-.cards:hover button {
+.cards:hover #btncards  {
     opacity: 1;
 }
 
@@ -568,7 +585,7 @@ button:active {
     justify-content: center;
     position: relative;
     bottom: 600px;
-    left: 500px;
+    left: 22%;
 
 }
 
@@ -582,6 +599,7 @@ button:active {
     line-height: normal;
     position: relative;
     bottom: 50px;
+    margin-top: 50px;
 }
 
 .formulaire {
@@ -591,8 +609,16 @@ button:active {
     color: white;
 }
 
+.input::placeholder{
+    color: grey;
+}
+
+.inputform::placeholder{
+    color: white;
+}
+
 .inputform {
-    color: #fff;
+    color: white;
     font-size: 0.9rem;
     background-color: transparent;
     width: 100%;
@@ -610,18 +636,9 @@ button:active {
 
 
 
-.input-border {
-    position: absolute;
-    background: var(--border-after-color);
-    width: 0%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    transition: 0.3s;
-}
 
 input:hover {
-    background: var(--input-hovered-color);
+    background: #FFF;
 }
 
 input:focus {
@@ -654,7 +671,8 @@ input:focus~.input-border {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-top: 30px;
+    margin-top: 90px;
+
 }
 
 .btnform::before {
@@ -680,6 +698,17 @@ input:focus~.input-border {
     gap: 21px;
     justify-content: center;
 }
+
+.post1 img{
+    width: 390px;
+}
+.post2 img{
+    width: 390px;
+}
+.post3 img{
+    width: 390px;
+}
+
 
 .instagram h3 {
     display: flex;
@@ -712,7 +741,7 @@ footer {
     height: 183px;
     display: flex;
     position: relative;
-    margin-left: 243px;
+    margin-left: 2%;
 }
 
 .sitemap {
@@ -802,13 +831,8 @@ footer {
 }
 
 .form {
-    --width-of-input: 200px;
-    --border-height: 1px;
-    --border-before-color: rgba(221, 221, 221, 0.39);
-    --border-after-color: #5891ff;
-    --input-hovered-color: #4985e01f;
+    
     position: relative;
-    width: var(--width-of-input);
 }
 
 /* styling of Input */
@@ -820,9 +844,9 @@ footer {
     box-sizing: border-box;
     padding-inline: 0.5em;
     padding-block: 0.7em;
-    border: none;
-    border-bottom: var(--border-height) solid var(--border-before-color);
-    color: var(--white, #FFF);
+ 
+    
+    
     font-family: Poppins;
     font-size: 20px;
     font-style: normal;
@@ -834,12 +858,12 @@ footer {
 .input-border {
     position: absolute;
     background: #F6F0F0;
-    width: 0%;
+
     height: 2px;
     bottom: 0;
     left: 0;
-    transition: 0.3s;
-    width: 433.987px;
+    
+    width: 350px;
     height: 1.331px;
 }
 
@@ -859,6 +883,8 @@ input:focus~.input-border {
     color: #ffffff;
     width: 30.65px;
     height: 19.87px;
+    left: 70px;
+    position: relative;
 }
 
 .newsletter h3 {
