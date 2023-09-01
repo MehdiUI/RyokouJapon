@@ -123,24 +123,28 @@
     </div>
 
   </div>
-
   <div class="instagram">
 
     <h3>
       Instagram
     </h3>
+
     <div class="postgroup">
+      
       <div class="post1">
+        <div class="cards_overlay7"></div>
         <img src="/asset/img/355635184_124652857320670_2875316618651683828_n 2.png"
           alt="">
       </div>
 
       <div class="post2">
+        <div class="cards_overlay8"></div>
         <img src="/asset/img/345060577_613847677301786_373737933857451719_n 1.png"
           alt="">
       </div>
 
       <div class="post3">
+        <div class="cards_overlay9"></div>
         <img src="/asset/img/332650103_738727047650461_3082135596126466973_n 1.png"
           alt="">
       </div>
@@ -212,5 +216,12 @@
       </div>
     </footer>
     
-
+    <script>
+      const icons = document.querySelector(".icons")
+      const ancre = document.querySelector(".ancre")
+    
+      icons.addEventListener('click',()=>{
+      ancre.classList.toggle('mobile-menu')
+      })
+    </script>
 </html>

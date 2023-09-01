@@ -113,7 +113,7 @@ margin-top: 94px;
 .grid-1{
     display: flex;
     align-items: center;
-    justify-content: c;
+    
 }
 .grid-2{
     display: flex;
@@ -124,12 +124,13 @@ margin-top: 94px;
     bottom: 817px;
 }
 
+
 /* FIN DES METHODES  */
 
 .grid-1 .cards:nth-child(1) img{
     width: 458px;
     height: 816px;
-    
+ 
 }
 .grid-2 .cards:nth-child(1) img{
     width: 458px;
@@ -139,12 +140,12 @@ margin-top: 94px;
 .grid-2 .cards:nth-child(2) img{
     width: 458px;
     height: 408px;
-    border-top-right-radius: 20px;
+   
 }
 .grid-2 .cards:nth-child(4) img{
     width: 458px;
     height: 408px;
-    border-bottom-right-radius: 20px;
+  
 }
 .grid-2 .cards:nth-child(3) img{
     width: 458px;
@@ -157,7 +158,25 @@ margin-top: 94px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    text-align: center;
+}
+
+.cards p {
+    font-weight: 700;
+    color: #FFF;
+    font-family: Murecho;
+}
+
+.cards p:nth-child(1) {
+    font-size: 159px;
+    opacity: 49%;
+    position: absolute;
+}
+
+.cards p:nth-child(2) {
+    font-size: 2rem;
+    position: absolute;
+    font-size: 65.282px;
 }
 
 .cards_overlay {
@@ -201,34 +220,30 @@ height: 408px;
     opacity: 0.3;
 }
 
-.cards_overlay6 {
-    width: 546px;
-    height: 384px;
-    background-color: #000;
-    position: absolute;
-    opacity: 0.3;
-}
 
-.cards_overlay7 {
+
+.cards_overlay10 {
     width: 458px;
 height: 408px;
 
     background-color: #000;
     position: absolute;
     opacity: 0.3;
+    border-radius: 20px;
 }
-.cards_overlay8 {
+.cards_overlay11 {
     width: 458px;
 height: 408px;
-
+border-radius: 20px;
     background-color: #000;
     position: absolute;
     opacity: 0.3;
 }
-.cards_overlay9 {
+
+.cards_overlay12 {
     width: 458px;
 height: 408px;
-
+border-radius: 20px;
     background-color: #000;
     position: absolute;
     opacity: 0.3;
@@ -261,15 +276,15 @@ height: 408px;
     transition: ease-in-out 0.6s;
 }
 
-.cards:hover .cards_overlay7 {
+.cards:hover .cards_overlay10{
     display: none;
     transition: ease-in-out 0.6s;
 }
-.cards:hover .cards_overlay8 {
+.cards:hover .cards_overlay11 {
     display: none;
     transition: ease-in-out 0.6s;
 }
-.cards:hover .cards_overlay9 {
+.cards:hover .cards_overlay12 {
     display: none;
     transition: ease-in-out 0.6s;
 }
@@ -350,22 +365,7 @@ button:before {
 
 
 
-button:hover:before,
-button:focus:before {
-    transition: 0.5s ease-in-out;
-    left: 0;
-    right: 0;
-    opacity: 1;
 
-}
-
-button:active {
-    transform: scale(0.9);
-}
-
-.cards:hover button {
-    opacity: 1;
-}
 
 .h3 {
     color: #FFF;
@@ -555,6 +555,7 @@ button:active {
     position: relative;
     border: 1px solid #F6F0F0;
 }
+
 .card2 {
     position: relative;
     width: 417px;
@@ -615,6 +616,19 @@ button:active {
     border: 1px solid #F6F0F0;
 }
 
+.h3plat{
+    color: var(--white, #FFF);
+    margin-top: 100px;
+    font-family: Murecho;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 37.275px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .gridplat {
     display: flex;
     justify-content: center;
@@ -624,6 +638,7 @@ button:active {
     margin-top: 30px;  
     gap: 32px;
 }
+
 .plats{
     display: flex;
     position: relative;
@@ -803,6 +818,49 @@ input:focus~.input-border {
     margin-bottom: 44px;
     margin-top: 71px;
 }
+
+.cards_overlay7 {
+    width: 390px; 
+    height:  303px;
+    background-color: #000;
+    position: absolute;
+    opacity: 0.3;
+    border-radius: 20px;
+}
+
+.cards_overlay8 {
+    width: 390px; 
+    height:  303px;
+    background-color: #000;
+    position: absolute;
+    opacity: 0.3;
+    border-radius: 20px;
+}
+
+.cards_overlay9 {
+    width: 390px; 
+    height:  303px;
+    background-color: #000;
+    position: absolute;
+    opacity: 0.3;
+    border-radius: 20px;
+}
+
+.post1:hover .cards_overlay7 {
+    display: none;
+    transition: ease-in-out 0.6s;
+}
+
+.post2:hover .cards_overlay8 {
+    display: none;
+    transition: ease-in-out 0.6s;
+}
+
+.post3:hover .cards_overlay9 {
+    display: none;
+    transition: ease-in-out 0.6s;
+}
+
 
 .post1 img{
     width: 390px;

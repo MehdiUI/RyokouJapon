@@ -10,6 +10,7 @@
   <title>Ryokou Japon</title>
   <link rel="stylesheet"
     href="/page/destinations.css">
+    <link rel="stylesheet" href="/page/destinationsresponsive.css">
   <link rel="shortcut icon"
     href="/asset/logo/Frame 35.svg"
     type="image/x-icon">
@@ -81,7 +82,7 @@
         <p id="titrekanji">関東</p>
         <p id="titregridk">Kantô</p>
         <div class="cards_overlay"></div>
-        <img src="/asset/img/pexels-stephen-tam-11665268 1.png"
+        <img id="kantoimg" src="/asset/img/pexels-stephen-tam-11665268 1.png"
           alt=""><button>Voir les détails</button>
       </div>
     </div>
@@ -101,7 +102,7 @@
         <div class="cards_overlay3"></div>
         <img src="/asset/img/8292 1.png"
           alt=""><button>Voir les détails</button>
-      </div><button>Voir les détails</button>
+      </div>
 
       <div class="cards">
         <p id="titrekanjih">北海道</p>
@@ -222,7 +223,7 @@
 
   
 
-  <div class="h3">
+  <div class="h3plat">
 
     <h3>
       Plats japonais
@@ -233,7 +234,7 @@
     <div class="cards">
       <p id="titrekanjir">ラメン</p>
       <p id="titregridk">Ramen</p>
-      <div class="cards_overlay7"></div>
+      <div class="cards_overlay10"></div>
       <img id="plat1"
         src="/asset/img/pexels-quang-anh-ha-nguyen-884600 1.png"
         alt=""><button>Découvrir</button>
@@ -242,7 +243,7 @@
     <div class="cards">
       <p id="titrekanji">寿司</p>
       <p id="titregridk">Sushi</p>
-      <div class="cards_overlay8"></div>
+      <div class="cards_overlay11"></div>
       <img id="plat1"
         src="/asset/img/pexels-cottonbro-studio-3298179 1.png"
         alt=""><button>Découvrir</button>
@@ -252,7 +253,7 @@
       <p id="titrekanjio">お好み <br>
         焼き </p>
       <p id="titregridb">Okonomiyaki</p>
-      <div class="cards_overlay9"></div>
+      <div class="cards_overlay12"></div>
       <img id="plat1"
         src="/asset/img/cre 1.png"
         alt=""><button>Découvrir</button>
@@ -286,18 +287,23 @@
     <h3>
       Instagram
     </h3>
+
     <div class="postgroup">
+      
       <div class="post1">
+        <div class="cards_overlay7"></div>
         <img src="/asset/img/355635184_124652857320670_2875316618651683828_n 2.png"
           alt="">
       </div>
 
       <div class="post2">
+        <div class="cards_overlay8"></div>
         <img src="/asset/img/345060577_613847677301786_373737933857451719_n 1.png"
           alt="">
       </div>
 
       <div class="post3">
+        <div class="cards_overlay9"></div>
         <img src="/asset/img/332650103_738727047650461_3082135596126466973_n 1.png"
           alt="">
       </div>
@@ -367,5 +373,12 @@
       © 2023 Ryoukou Japon Tout droits réservés
     </div>
   </footer>
+  <script>
+    const icons = document.querySelector(".icons")
+    const ancre = document.querySelector(".ancre")
   
+    icons.addEventListener('click',()=>{
+    ancre.classList.toggle('mobile-menu')
+    })
+  </script>
 </html>

@@ -214,32 +214,36 @@
       </h3>
     </div>
     <div class="gridplat">
-  
+
       <div class="cards">
         <p id="titrekanjir">ラメン</p>
-        <p id="titregridk">Ramen</p><div class="cards_overlay7"></div>
+        <p id="titregridk">Ramen</p>
+        <div class="cards_overlay10"></div>
         <img id="plat1"
           src="/asset/img/pexels-quang-anh-ha-nguyen-884600 1.png"
-          alt=""><button>Voir les détails</button>
+          alt=""><button>Découvrir</button>
       </div>
   
       <div class="cards">
         <p id="titrekanji">寿司</p>
-        <p id="titregridk">Sushi</p><div class="cards_overlay8"></div>
+        <p id="titregridk">Sushi</p>
+        <div class="cards_overlay11"></div>
         <img id="plat1"
           src="/asset/img/pexels-cottonbro-studio-3298179 1.png"
-          alt=""><button>Voir les détails</button>
+          alt=""><button>Découvrir</button>
       </div>
   
       <div class="cards">
         <p id="titrekanjio">お好み <br>
           焼き </p>
-        <p id="titregridb">Okonomiyaki</p> <div class="cards_overlay9"></div>
+        <p id="titregridb">Okonomiyaki</p>
+        <div class="cards_overlay12"></div>
         <img id="plat1"
           src="/asset/img/cre 1.png"
-          alt=""><button>Voir les détails</button>
+          alt=""><button>Découvrir</button>
       </div>
     </div>
+  
   
     <div class="contact">
   
@@ -264,22 +268,27 @@
     </div>
   
     <div class="instagram">
-  
+
       <h3>
         Instagram
       </h3>
+
       <div class="postgroup">
+        
         <div class="post1">
+          <div class="cards_overlay7"></div>
           <img src="/asset/img/355635184_124652857320670_2875316618651683828_n 2.png"
             alt="">
         </div>
-  
+
         <div class="post2">
+          <div class="cards_overlay8"></div>
           <img src="/asset/img/345060577_613847677301786_373737933857451719_n 1.png"
             alt="">
         </div>
-  
+
         <div class="post3">
+          <div class="cards_overlay9"></div>
           <img src="/asset/img/332650103_738727047650461_3082135596126466973_n 1.png"
             alt="">
         </div>
@@ -350,4 +359,12 @@
       © 2023 Ryoukou Japon Tout droits réservés
     </div>
   </footer>
+  <script>
+    const icons = document.querySelector(".icons")
+    const ancre = document.querySelector(".ancre")
+  
+    icons.addEventListener('click',()=>{
+    ancre.classList.toggle('mobile-menu')
+    })
+  </script>
 </html>
