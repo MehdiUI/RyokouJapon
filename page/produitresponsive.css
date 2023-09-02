@@ -97,6 +97,17 @@
         width: 450px;
     }
 
+    .photo{
+        width: 550px;
+        position: relative;
+        left: 5%;
+    }
+
+    .photo img{
+        width: 550px;
+        object-fit: cover;
+    }
+
 .grid{
     top: 300px;
 }
@@ -119,6 +130,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    object-fit: cover;
 }
 .grid-1 .cards:nth-child(1) img{
     width: 546px;
@@ -126,6 +138,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    object-fit: cover;
 }
 .grid-2 .cards:nth-child(1) img{
     width: 546px;
@@ -133,11 +146,13 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    object-fit: cover;
 }.grid-2 .cards:nth-child(2) img{
     width: 546px;
     height: 384px; 
     text-align: center;
     align-items: center;
+    object-fit: cover;
     justify-content: center;
 }
 
@@ -147,6 +162,7 @@
     text-align: center;
     align-items: center;
     justify-content: center; 
+    object-fit: cover;
 }
 
 
@@ -156,6 +172,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    object-fit: cover;
 }
 
 
@@ -292,6 +309,7 @@ display: none;
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 1200px;
 }
 .caseform{
     left: 20px;

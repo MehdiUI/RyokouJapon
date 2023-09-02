@@ -188,6 +188,9 @@ width: 600px;
 height: 350px;
 }
 
+.grid{
+    gap: 15px;
+}
 .cards{
     margin: 0;
     width: 546px;
